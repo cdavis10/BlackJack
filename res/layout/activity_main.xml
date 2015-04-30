@@ -1,0 +1,256 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/playerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/playerCard1"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/back_red"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/playerCard2"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/back_red"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/playerCard3"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/back_red"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/playerCard4"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/back_red"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/playerCard5"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/back_red"
+            android:visibility="visible" />
+    </LinearLayout>
+    
+      <Button
+          android:id="@+id/btnExit"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:layout_alignRight="@+id/btnHit"
+          android:text="@string/btnLblExit" />
+      
+       <Button
+           android:id="@+id/btnRules"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/btnSurrender"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentRight="true"
+           android:text="@string/btnLblHowToPlay" />
+
+       <TextView
+           android:id="@+id/lblDealerScore"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignRight="@+id/btnBet"
+           android:layout_below="@+id/txtMoney"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="28dp"
+           android:text="@string/lblDealerScore" />
+
+       <SeekBar
+           android:id="@+id/placeBet"
+           android:layout_width="500dp"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/lblBet"
+           android:paddingRight="20dp" />
+
+       <Button
+           android:id="@+id/btnHit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/btnStand"
+           android:layout_alignLeft="@+id/playerLayout"
+           android:layout_marginLeft="15dp"
+           android:text="@string/btnLblHit"
+           android:visibility="invisible" />
+
+       <Button
+           android:id="@+id/btnBet"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/placeBet"
+           android:layout_centerHorizontal="true"
+           android:text="@string/btnLblBet" />
+
+       <TextView
+           android:id="@+id/lblYourScore"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/playerLayout"
+           android:layout_alignLeft="@+id/lblDealerScore"
+           android:layout_centerHorizontal="true"
+           android:text="@string/lblYourScore" />
+
+       <TextView
+           android:id="@+id/txtPlayerScore"
+           android:layout_width="40dp"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/playerLayout"
+           android:layout_toRightOf="@+id/lblYourScore"
+           android:text="0" />
+
+       <TextView
+           android:id="@+id/txtDealerScore"
+           android:layout_width="40dp"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/lblDealerScore"
+           android:layout_alignBottom="@+id/lblDealerScore"
+           android:layout_toRightOf="@+id/lblDealerScore"
+           android:text="0" />
+
+       <TextView
+           android:id="@+id/lblBet"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/playerLayout"
+           android:layout_marginTop="14dp"
+           android:layout_centerHorizontal="true"
+           android:text="@string/lblBet"
+           android:textSize="20sp" />
+
+       <TextView
+           android:id="@+id/txtBet"
+           android:layout_width="40dp"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/lblBet"
+           android:layout_alignBottom="@+id/lblBet"
+           android:layout_toRightOf="@+id/txtPlayerScore"
+           android:text="o"
+           android:textSize="25sp" />
+
+       <TextView
+           android:id="@+id/txtMoney"
+           android:layout_width="60dp"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/lblMoney"
+           android:layout_alignBottom="@+id/lblMoney"
+           android:layout_toRightOf="@+id/lblMoney"
+           android:text="0" />
+
+       <TextView
+           android:id="@+id/lblMoney"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="24dp"
+           android:text="@string/lblMoney" />
+
+       <LinearLayout
+           android:id="@+id/dealerLayout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/lblDealerScore"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="63dp"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:visibility="invisible" >
+
+           <ImageView
+               android:id="@+id/dealerCard1"
+               android:layout_width="50dp"
+               android:layout_height="75dp"
+               android:layout_margin="5dp"
+               android:src="@drawable/back_blue"
+               android:visibility="visible" />
+
+           <ImageView
+               android:id="@+id/dealerCard2"
+               android:layout_width="50dp"
+               android:layout_height="75dp"
+               android:layout_margin="3dp"
+               android:src="@drawable/back_blue"
+               android:visibility="visible" />
+
+           <ImageView
+               android:id="@+id/dealerCard3"
+               android:layout_width="50dp"
+               android:layout_height="75dp"
+               android:layout_margin="3dp"
+               android:src="@drawable/back_blue"
+               android:visibility="visible" />
+
+           <ImageView
+               android:id="@+id/dealerCard4"
+               android:layout_width="50dp"
+               android:layout_height="75dp"
+               android:layout_margin="3dp"
+               android:src="@drawable/back_blue"
+               android:visibility="visible" />
+
+           <ImageView
+               android:id="@+id/dealerCard5"
+               android:layout_width="72dp"
+               android:layout_height="match_parent"
+               android:layout_margin="3dp"
+               android:src="@drawable/back_blue"
+               android:visibility="visible" />
+       </LinearLayout>
+
+       <Button
+           android:id="@+id/btnSurrender"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/btnStand"
+           android:layout_alignRight="@+id/placeBet"
+           android:text="@string/btnLblSurrender"
+           android:visibility="invisible" />
+
+       <Button
+           android:id="@+id/btnStand"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/btnBet"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="27dp"
+           android:text="@string/btnLblStand"
+           android:visibility="invisible" />
+
+       <Button
+           android:id="@+id/btnNewHand"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:text="@string/btnNewHand"
+           android:visibility="invisible" />
+
+</RelativeLayout>

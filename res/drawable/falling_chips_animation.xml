@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:oneshot="false">
+    
+    <item android:drawable = "@drawable/falling_chips1" android:duration= "100"/>
+    <item android:drawable = "@drawable/falling_chips2" android:duration= "100"/>
+    <item android:drawable = "@drawable/falling_chips3" android:duration= "100"/>
+    <item android:drawable = "@drawable/falling_chips4" android:duration= "100"/>
+    <item android:drawable = "@drawable/falling_chips5" android:duration= "100"/>
+    <item android:drawable = "@drawable/falling_chips6" android:duration= "100"/>    
+</animation-list>

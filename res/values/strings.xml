@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Blackjack</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="lblMoney">Money: $  </string>
+    <string name="lblHighScore">Highest score: $</string>
+    <string name="lblDealerScore">Dealer\'\s score:</string>
+    <string name="lblYourScore">Your score:</string>
+    <string name="lblBet">Bet: $</string>
+    <string name="btnLblBet">Place Bet</string>
+    <string name="btnLblHit">Hit</string>
+    <string name="btnLblStand">Stand</string>
+    <string name="btnLblSurrender">Surrender</string>
+    <string name="btnLblExit">Click to exit</string>
+    <string name="btnLblHowToPlay">How to play</string>
+    <string name="action_settings">Settings</string>
+    <string name="txtTitle">BlackJack!</string>
+    <string name="btnNewHand">New Hand</string>
+    <string name="btnBack">Back</string>
+
+</resources>
