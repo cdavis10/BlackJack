@@ -32,6 +32,7 @@ public class RulesActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				finish();
 				startActivity(new Intent(RulesActivity.this, MainActivity.class));
 				
 			}

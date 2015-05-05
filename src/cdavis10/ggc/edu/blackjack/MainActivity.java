@@ -117,9 +117,9 @@ public class MainActivity extends Activity implements OnSeekBarChangeListener {
 		myMoney.setText("1500"); // the player's starting money
 
 		money = Integer.parseInt(myMoney.getText().toString());
-		betBar.setMax(money);// the maximum value a player can bet <= than
+		betBar.setMax(money/5);// the maximum value a player can bet <= than
 								// amount of money he has.
-		betBar.incrementProgressBy(5);
+		betBar.incrementProgressBy(1);
 
 		betBar.setOnSeekBarChangeListener(this);
 		betBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
@@ -142,8 +142,8 @@ public class MainActivity extends Activity implements OnSeekBarChangeListener {
 			public void onProgressChanged(SeekBar seekBar, int progress,
 					boolean fromUser) {
 				// TODO Auto-generated method stub
-				betText.setText("" + progress);
-				bet = progress;// <-- sets the amount of bet = location on the
+				betText.setText("" + (progress*5));
+				bet = progress*5;// <-- sets the amount of bet = location on the
 								// seek bar.
 			}
 		});
@@ -339,7 +339,8 @@ public class MainActivity extends Activity implements OnSeekBarChangeListener {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				finish();
+				 finish();
+		         System.exit(0);
 			}
 		});
 		rules.setOnClickListener(new OnClickListener() {
